@@ -1,11 +1,6 @@
 
-p {
-    font-size: 48px;
-    color: blue;
-}
-
 .content{
-    display:flex;
+    display: flex;
 }
 
 .background-container{
@@ -18,8 +13,8 @@ p {
 
 .form-container{
     display: flex;
+    flex-direction: column;
     width: 100%;
-
 }
 
 .logo {
@@ -30,6 +25,49 @@ p {
     top: 20%;
     height: 20%;
     background: rgba(20, 20, 20, 0.6)
+}
+
+.form-container > * {
+    background-color: #dadada;
+    flex: 1;
+}
+
+.formTitle {
+    width: 100%;
+    padding: 20px 0 0 20px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form-intro-text p {
+    font-size: 48px;
+    color: black;
+    padding: 40px;
+    margin-top: 200px;
+}
+
+.formDiv {
+    background-color: white;
+    height: 100%;
+    filter: drop-shadow(0rem 1rem 25px #888888);
+}
+
+.input {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    text-transform: uppercase;
+}
+
+.inputForm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
+
+.submitButtonDiv button {
+    background-color: #596D48;
 }
 
 @font-face {
